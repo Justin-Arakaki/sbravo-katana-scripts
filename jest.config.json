@@ -1,0 +1,11 @@
+{
+  "preset": "ts-jest/presets/default-esm",
+  "testEnvironment": "node",
+  "rootDir": "./src",
+  "module": "ESNext",
+  "moduleFileExtensions": ["ts", "js"],
+  "testMatch": ["**/__tests__/**/*.ts", "**/?(*.)+(spec|test).ts"],
+  "transform": {
+    "^.+\\.ts$": "ts-jest"
+  }
+}

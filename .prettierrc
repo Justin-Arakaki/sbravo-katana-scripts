@@ -1,0 +1,23 @@
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "printWidth": 80,
+  "importOrder": [
+    "/controllers/",
+    "/models/",
+    "/routes/",
+    "/middleware/",
+    "/utils/",
+    "/services/",
+    "/constants/",
+    "/config/",
+    "\\/errors\\/",
+    "^./",
+    "^../",
+    ".scss$",
+    ".css$"
+  ]
+}
