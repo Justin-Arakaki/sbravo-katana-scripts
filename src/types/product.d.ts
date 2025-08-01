@@ -1,4 +1,5 @@
 export type Product = {
+  id: number;
   ids?: number[];
   name?: string;
   uom?: string;
@@ -17,6 +18,8 @@ export type Product = {
   include_archived?: boolean;
   limit?: string; // Consider using number if server accepts numeric input
   page?: string; // Same note as above
+  variants: Variant[];
+  configs?: object[];
   created_at_min?: string; // ISO 8601 format expected
   created_at_max?: string;
   updated_at_min?: string;

@@ -5,7 +5,10 @@ export type Variant = {
   sku: string | null;
   sales_price: string | number | null;
   purchase_price: string | number | null;
-  config_attributes: Record<string, unknown>[];
+  config_attributes: {
+    config_name: string;
+    config_value: string;
+  }[];
   type: string | null;
   minimum_order_quantity: string | number | null;
   lead_time: string | number | null;

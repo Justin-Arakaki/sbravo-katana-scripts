@@ -1,13 +1,13 @@
 import katanaApiClient from '../../config/katanaApiClient';
 import { apiErrorResponse } from '../../types/apiError';
-import { Product } from '../../types/product';
+import { Variant } from '../../types/variant';
 
-export default async function updateProduct(
+export default async function updateVariant(
   id: number,
-  params: Partial<Product>
-): Promise<Product[] | []> {
+  params: Partial<Variant>
+): Promise<Variant[] | []> {
   try {
-    const response = await katanaApiClient.patch(`/products/${id}`, params);
+    const response = await katanaApiClient.patch(`/variants/${id}`, params);
     const data = response?.data?.data;
     if (!data || !data[0] || !data[0].id) {
       return [];
