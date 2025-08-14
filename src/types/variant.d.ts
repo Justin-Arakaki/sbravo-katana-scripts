@@ -2,7 +2,7 @@ export type Variant = {
   id: string | number | null;
   product_id: string | number | null;
   material_id: string | number | null;
-  sku: string | null;
+  sku: string | string[] | null;
   sales_price: string | number | null;
   purchase_price: string | number | null;
   config_attributes: {

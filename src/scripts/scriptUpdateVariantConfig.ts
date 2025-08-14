@@ -13,7 +13,7 @@ type ItemRow = {
 };
 
 // EDIT THESE
-const productName = 'BK Valve Bracket Bar Sub-Assembly, Unfinished';
+const productName = 'Upper Frame Medium, Finished';
 const configName = 'Description';
 
 // configName has to match spreadsheet
@@ -70,3 +70,4 @@ for (const variant of variantList) {
     ],
   });
 }
+console.log(`Updated ${productName} descriptions.`);
