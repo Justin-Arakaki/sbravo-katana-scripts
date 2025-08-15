@@ -13,7 +13,7 @@ type ItemRow = {
 };
 
 // EDIT THESE
-const productName = 'Upper Frame Medium, Finished';
+const productName = 'B1000 Box';
 const configName = 'Description';
 
 // configName has to match spreadsheet
